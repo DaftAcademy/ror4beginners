@@ -1,1 +1,1 @@
-# ror4beginners
+# Ruby on Rails 4 beginners
