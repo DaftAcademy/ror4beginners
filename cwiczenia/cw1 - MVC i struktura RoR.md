@@ -1,0 +1,21 @@
+Co się działo:
+- MVC - Model View Controller
+  - Model zajmuje się reprezentacją danych
+  - View jest widokiem który użytkownik widzi
+  - Controller wybiera co i jak pokazać użytkownikowi
+- Najważniejsze pliki w Railsach
+  - `Gemfile` - deklaracja bibliotek (instalacja przez `bundle install`)
+  - `config/routes.rb` - ścieżki, konwertuje adres i metodę zapytania na odpowiednią akcję w kontrolerze
+  - `app/assets` - obrazki, skrypty (css, js) i inne media
+  - `app/(models|views|controllers)` - (modele|widoki|kontrolery)
+  - lokalizacja i nazwa pliku ma znaczenie! (autoloading)
+- Scaffolding - generacja podstawowych plików
+  - generatory - `rails generate (controller|model) nazwa`
+  - destruktory - `rails destroy (controller|model) nazwa`
+- Kontroler i widok
+  - podstawowa akcja
+  - widok odpowiednio zagnieżdżony i nazwany
+  - `.erb` umożliwia egzekucję kodu ruby
+  - zmienna instancyjna `@name` umożliwia dostęp z poziomu widoku
+- Routing
+  - skierowanie domyślnej ścieżki na naszą akcję przez `root to: 'controller#action'`
